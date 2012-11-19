@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Demonstration </category>
+  <title>Rodent Thickness Measurement and SPHARM </title>
+  <description>Thickness Measurement and SPHARM</description>
+  <version>1.0 </version>
+            
+  <documentation-url></documentation-url>
+            
+  <license></license>
+  <contributor> Marie Jacquemard</contributor>
+            
+  <acknowledgements></acknowledgements>
+
+ <parameters>
+    <label>Thickness Measureent and Spharm</label>
+    <description>Input/output parameters of Spharm</description>
+    
+      <file>
+		<name>dataset</name>
+		<description>input file with the path of inputs</description>
+		<label>dataset</label>
+		<longflag>dataset</longflag>
+		<default></default>
+	</file>
+      
+ 	
+	<string-enumeration>
+		<name>exprId</name>
+		<description> left or right  </description>
+		<label>expr Id</label>
+		<longflag>exprId</longflag>
+		 <default>left</default>
+      		<element>left</element>
+      		<element>right</element>
+	 </string-enumeration>
+    
+</parameters>
+
+<parameters>
+    <label>Output</label>
+    <description>Output directory</description>
+  	<string>
+		<name>subjWorkDir</name>
+		<description>subject output directory </description>
+		<label>subj Work Dir</label>
+		<longflag>subjWorkDir</longflag>
+		<default></default>
+	</string>
+
+</parameters>
+</executable>
